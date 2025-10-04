@@ -59,10 +59,7 @@ const HeroSection: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
             React, Next.js, and TypeScript. Possesses a strong foundation in
             modern web development practices, strengthened through formal
             training at Zulfah Academy and academic studies in Systems
-            Engineering. Passionate about crafting clean, user-friendly
-            interfaces, optimizing performance, and continuously improving
-            through learning and collaboration. Currently a 300-level student at
-            the University of Lagos.
+            Engineering. Currently a 300-level student at the University of Lagos.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {socialLinks.map((link, idx) => (
