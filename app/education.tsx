@@ -7,13 +7,14 @@ const EducationCard: React.FC<{
   subtitle: string;
   detail: string;
   extra?: string;
+  evenextra?: string;
   colorScheme: {
     bg: string;
     border: string;
     icon: string;
     text: string;
   }
-}> = ({ icon: Icon, title, subtitle, detail, extra, colorScheme }) => (
+}> = ({ icon: Icon, title, subtitle, detail, extra, evenextra,  colorScheme }) => (
   <div className={`bg-gradient-to-br ${colorScheme.bg} p-8 rounded-xl backdrop-blur-sm border ${colorScheme.border} hover:border-opacity-50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl`}>
     <div className="flex items-center gap-3 mb-4">
       <Icon className={colorScheme.icon} size={32} />
@@ -22,6 +23,7 @@ const EducationCard: React.FC<{
     <p className={`${colorScheme.text} text-lg mb-2`}>{subtitle}</p>
     <p className="text-gray-400 mb-2">{detail}</p>
     {extra && <p className="text-gray-400">{extra}</p>}
+    <p className="text-gray-400 mb-2">{evenextra}</p>
   </div>
 );
 
@@ -34,6 +36,7 @@ const EducationSection = () => {
       subtitle: "B.Sc. Systems Engineering",
       detail: "Year 3 (Ongoing)",
       extra: "Expected Graduation: 2028",
+      evenextra:"Current CGPA: 4.20/5.00 ",
       colorScheme: { bg: "from-purple-900/40 to-slate-800/40", border: "border-purple-500/20", icon: "text-purple-400", text: "text-purple-300" }
     },
     {

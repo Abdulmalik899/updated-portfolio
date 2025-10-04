@@ -53,6 +53,12 @@ const ProjectsSection = () => {
       tech: 'React, TypeScript, GitHub API',
       description: 'TypeScript app integrating GitHub REST API with error handling',
       highlights: ['API Integration', 'TypeScript', 'Async Programming']
+    },
+    {
+      title: 'E-Commerce Website',
+      tech: 'Next.js, Tailwind CSS, Stripe',
+      description: 'Contributed to building user-friendly interfaces, improving site performance, and ensuring a seamless shopping experience for customers.',
+      highlights:['User-Friendly Interface', 'Performance Optimization', 'Customer Satisfaction']
     }
   ];
 
